@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>PRODUCT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="container nav-container">
+        <a href="index.html" class="logo"> BEAUBOSS</a>
+        <ul class="nav-links">
+	    <li><a href="index.html"><strong>HOME</strong></a></li>
+		<li><a href="about.html"><strong>ABOUT</strong></a></li>
+		<li><a href="product.html"><strong>PRODUCT</strong></a></li>
+		<li><a href="recommend.html"><strong>RECOMMENDATION</strong></a></li>
+		<li><a href="faq.html"><strong>FAQ</strong></a></li>
+		<li><a href="contact.html"><strong>CONTACT US</strong></a></li>
+        </ul>
+    </div>
+</nav>
+<br>	
+<br>
+<br>
+<br>	
+<br>
+<br>
+<!-- her display-->
+<h2 style="text-align:center">FOR HER</h2>
+
+<div class="container-disp-her">
+  <div class="mySlides-disp-her">
+    <div class="numbertext-disp-her">1 / 4</div>
+    <img src="test.png" style="width:100%; height:400px">
+  </div>
+
+  <div class="mySlides-disp-her">
+    <div class="numbertext-disp-her">2 / 4</div>
+    <img src="him.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides-disp-her">
+    <div class="numbertext-disp-her">3 / 4</div>
+    <img src="unisex.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides-disp-her">
+    <div class="numbertext-disp-her">4 / 4</div>
+    <img src="her.jpeg" style="width:100%">
+  </div>
+
+
+    
+  <a class="prev-disp-her" onclick="plusSlides(-1)">❮</a>
+  <a class="next-disp-her" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container-disp-her">
+    <p id="caption-disp-her"></p>
+  </div>
+
+  <div class="row-disp-her">
+    <div class="column-disp-her">
+      <img class="demo-disp-her cursor-disp-her" src="her.jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column-disp-her">
+      <img class="demo-disp-her cursor-disp-her" src="him.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column-disp-her">
+      <img class="demo-disp-her cursor-disp-her" src="unisex.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column-disp-her">
+      <img class="demo-disp-her cursor-disp-her" src="her.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides-disp-her");
+  let dots = document.getElementsByClassName("demo-disp-her");
+  let captionText = document.getElementById("caption-disp-her");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-disp-her", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active-disp-her";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<br>
+<br>
+
+
+
+
+</body>
+<!-- Footer -->
+    <footer>
+        <div class="social-links">
+     
+        <a href="link"  class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i></a>
+        
+        <a href="link" class="social-link" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i></a>
+    </div>
+    <p>&copy; 2025 BeauBoss. All Rights Reserved.</p>
+		
+		<div class="info-dates">
+        <span><strong>Data Collected:</strong> 2025-10-15</span>
+        <span><strong>Created:</strong> 2026-1-10</span>
+        <span><strong>Last Updated:</strong> <span id="last-modified">Loading...</span></span>
+    </div>
+		<script src="date.js"></script>
+    </footer>
+	
+</html>
