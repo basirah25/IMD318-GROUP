@@ -213,7 +213,58 @@ footer {
 
 /*PRODUCT PAGE*/
 
-/* her display*/
+/*product with description*/
+
+div.product {
+  border: 1px solid #ccc;
+}
+
+div.product:hover {
+  border: 1px solid #777;
+}
+
+div.product img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc-product {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive-product{
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive-product {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive-product {
+    width: 100%;
+  }
+}
+
+.clearfix-product:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*RECOMMENDATION PAGE*/
+
+/* recommend display*/
 
 * {
   box-sizing: border-box;
@@ -223,23 +274,23 @@ img {
   vertical-align: middle;
 }
 
-.container-disp-her {
+.container-disp-recommend {
   position: relative;
 }
 
 
-.mySlides-disp-her {
+.mySlides-disp-recommend {
   display: none;
 }
 
 
-.cursor-disp-her {
+.cursor-disp-recommend {
   cursor: pointer;
 }
 
 
-.prev-disp-her,
-.next-disp-her {
+.prev-disp-recommend,
+.next-disp-recommend {
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -254,19 +305,19 @@ img {
   -webkit-user-select: none;
 }
 
-.next-disp-her {
+.next-disp-recommend {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 
-.prev-disp-her:hover,
-.next-disp-her:hover {
+.prev-disp-recommend:hover,
+.next-disp-recommend:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 
-.numbertext-disp-her {
+.numbertext-disp-recommend {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -275,34 +326,34 @@ img {
 }
 
 
-.caption-container-disp-her {
+.caption-container-disp-recommend {
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
   color: white;
 }
 
-.row-disp-her:after {
+.row-disp-recommend:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.column-disp-her {
+.column-disp-recommend {
   float: left;
   width: 25%;
 }
 
-.demo-disp-her {
+.demo-disp-recommend {
   opacity: 0.6;
 }
 
-.active-disp-her,
-.demo-disp-her:hover {
+.active-disp-recommend,
+.demo-disp-recommend:hover {
   opacity: 1;
 }
 
-/*RECOMMENDATION PAGE*/
+
 
 /*FAQ PAGE*/
 

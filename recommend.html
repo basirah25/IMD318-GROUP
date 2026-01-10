@@ -24,7 +24,90 @@
 <br>	
 <br>
 <br>
+<br>
 
+<!-- recommend display-->
+<h2 style="text-align:center">OUR RECOMMENDATION</h2>
+
+<div class="container-disp-recommend">
+  <div class="mySlides-disp-recommend"style="background-color:black; text-align:center">
+    <div class="numbertext-disp-recommend">1 / 4</div>
+    <img src="her.jpeg" style="width:30%; height:20%; ">
+  </div>
+
+  <div class="mySlides-disp-recommend" style="background-color:black; text-align:center">
+    <div class="numbertext-disp-recommend" style="background-color:black">2 / 4</div>
+    <img src="him.jpeg" style="width:30%; height:20%; ">
+  </div>
+
+  <div class="mySlides-disp-recommend"style="background-color:black; text-align:center">
+    <div class="numbertext-disp-recommend">3 / 4</div>
+    <img src="unisex.jpeg" style="width:30%; height:20%; ">
+  </div>
+    
+  <div class="mySlides-disp-recommend"style="background-color:black; text-align:center">
+    <div class="numbertext-disp-recommend">4 / 4</div>
+    <img src="her.jpeg" style="width:30%; height:20%; ">
+  </div>
+
+
+    
+  <a class="prev-disp-recommend" onclick="plusSlides(-1)">❮</a>
+  <a class="next-disp-recommend" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container-disp-recommend">
+    <p id="caption-disp-recommend"></p>
+  </div>
+
+  <div class="row-disp-recommend">
+    <div class="column-disp-recommend">
+      <img class="demo-disp-recommend cursor-disp-recommend" src="her.jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column-disp-recommend">
+      <img class="demo-disp-recommend cursor-disp-recommend" src="him.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column-disp-recommend">
+      <img class="demo-disp-recommend cursor-disp-recommend" src="unisex.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column-disp-recommend">
+      <img class="demo-disp-recommend cursor-disp-recommend" src="her.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    
+  </div>
+</div>
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides-disp-recommend");
+  let dots = document.getElementsByClassName("demo-disp-recommend");
+  let captionText = document.getElementById("caption-disp-recommend");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-disp-recommend", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active-disp-recommend";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 
 <br>
 <br>
