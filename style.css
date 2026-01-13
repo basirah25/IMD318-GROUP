@@ -116,9 +116,10 @@ footer {
 
 .social-link i {
     font-size: 20px;
+	color: black;
 }
 .social-link:hover {
-    background-color: skyblue;
+    background-color: #daa250;
     color: black;
     transform: translateY(-3px);
 }
@@ -458,3 +459,4 @@ button[type="submit"]:hover {
     border-left: 5px solid #2c3e50;
     line-height: 1.6;
 }
+
