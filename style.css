@@ -375,8 +375,6 @@ img {
 
 /*CONTACT US PAGE*/
 
-
-
 .contact h2 {
     font-family: "Poppins", sans-serif;
     color: DarkGoldenRod;
@@ -419,7 +417,7 @@ img {
     border-radius: 6px;
     font-size: 14px;
     box-sizing: border-box; 
-
+}
         .radio-row {
             display: flex;
             gap: 20px;
@@ -451,12 +449,12 @@ button[type="submit"]:hover {
     background-color: #34495e;
 }
 
-/* Result Section */
+
 #result {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background: LightGoldenRodYellow ;
-    border-left: 5px solid black;
+    background: #f9f9f9;
+    border-left: 5px solid #2c3e50;
     line-height: 1.6;
 }
