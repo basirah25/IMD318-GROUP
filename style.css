@@ -341,7 +341,7 @@ img {
 
 .column-disp-recommend {
   float: left;
-  width: 25%;
+  width: 33.33%;
 }
 
 .demo-disp-recommend {
@@ -372,5 +372,6 @@ img {
     color: Navy ;
     margin-bottom: 15px;
 }
+
 
 /*CONTACT US PAGE*/
