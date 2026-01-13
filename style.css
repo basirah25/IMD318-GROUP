@@ -313,7 +313,7 @@ img {
 
 .prev-disp-recommend:hover,
 .next-disp-recommend:hover {
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -373,6 +373,90 @@ img {
     margin-bottom: 15px;
 }
 
-
 /*CONTACT US PAGE*/
 
+
+
+.contact h2 {
+    font-family: "Poppins", sans-serif;
+    color: DarkGoldenRod;
+    margin-bottom: 15px;
+}
+
+.contact {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#borang {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+
+#borang label {
+    font-weight: 600;
+    margin-bottom: -10px;
+    color: #333;
+}
+
+#borang input[type="text"],
+#borang input[type="password"],
+#borang input[type="email"],
+#borang input[type="datetime-local"],
+#borang select,
+#borang textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box; 
+
+        .radio-row {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 5px 0;
+        }
+		
+		.radio-row label {
+            font-weight: 400 !important;
+            margin-bottom: 0 !important;
+            cursor: pointer;
+        }
+
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+button[type="submit"] {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #34495e;
+}
+
+/* Result Section */
+#result {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: LightGoldenRodYellow ;
+    border-left: 5px solid black;
+    line-height: 1.6;
+}
