@@ -356,5 +356,21 @@ img {
 
 
 /*FAQ PAGE*/
+.list-wrapper {
+    width: 100%;
+	max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: HoneyDew;
+    border-radius: 40px;
+    box-shadow: 0 0 15px rgba(255, 180, 210, 0.6);
+    text-align: left;
+}
+
+.list-wrapper h2 {
+    font-family: "Poppins", sans-serif;
+    color: Navy ;
+    margin-bottom: 15px;
+}
 
 /*CONTACT US PAGE*/
