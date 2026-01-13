@@ -356,7 +356,7 @@ img {
 
 
 /*FAQ PAGE*/
-.list-wrapper {
+.faq-wrapper {
     width: 100%;
 	max-width: 1200px;
     margin: 40px auto;
@@ -367,10 +367,11 @@ img {
     text-align: left;
 }
 
-.list-wrapper h2 {
+.faq-wrapper h2 {
     font-family: "Poppins", sans-serif;
     color: Navy ;
     margin-bottom: 15px;
 }
+
 
 /*CONTACT US PAGE*/
