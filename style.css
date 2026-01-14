@@ -190,12 +190,12 @@ footer {
   }
 .video-box {
 	text-align:center;
-	margin: 10px 0;
+	margin: 7px 0;
 }
 .video-box video,
 .video-box iframe {
 	max-width:100%;
-	border-radius:15px;
+	border-radius:10px;
 }
 
 
@@ -547,6 +547,7 @@ button[type="submit"]:hover {
     border-left: 5px solid #2c3e50;
     line-height: 1.6;
 }
+
 
 
 
