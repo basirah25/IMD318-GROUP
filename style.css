@@ -190,7 +190,7 @@ footer {
   }
 .video-box {
 	text-align:center;
-	margin: 40px 0;
+	margin: 20px 0;
 }
 .video-box video,
 .video-box iframe {
@@ -547,6 +547,7 @@ button[type="submit"]:hover {
     border-left: 5px solid #2c3e50;
     line-height: 1.6;
 }
+
 
 
 
