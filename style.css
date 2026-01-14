@@ -16,7 +16,7 @@ background-color: #e1d9c9;
 
 /* Navigation */
 nav {
-    background-color: Black;
+    background-color: #8B0909;
     padding: 20px 0;
     position: fixed;
     width: 100%;
@@ -459,4 +459,5 @@ button[type="submit"]:hover {
     border-left: 5px solid #2c3e50;
     line-height: 1.6;
 }
+
 
